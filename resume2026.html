@@ -4,177 +4,224 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>김영은 자기소개서</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap");
 
-      .sidebar {
-        width: 300px;
-        background-color: #111827;
-        color: white;
-        padding: 40px;
-      }
+    <link rel="stylesheet" href="resume2026.css" />
 
-      .name-en {
-        font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        font-size: 24px;
-        margin-bottom: 5px;
-      }
-      .birth-en {
-        font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        color: #94a3b8;
-        margin-bottom: 30px;
-      }
-      .style-text {
-        font-family: "Noto Sans KR", sans-serif;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #e2e8f0;
-        margin-bottom: 30px;
-      }
-
-      .contact-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        font-size: 14px;
-      }
-      .icon-circle {
-        width: 32px;
-        height: 32px;
-        border: 2px solid #38bdf8;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 12px;
-        color: #38bdf8;
-      }
-
-      .hashtags {
-        margin-top: 40px;
-        color: #64748b;
-        font-size: 13px;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div
-      style="
-        width: 300px;
-        background-color: #111827;
-        color: #ffffff;
-        padding: 40px;
-        font-family: &quot;Poppins&quot;, sans-serif;
-      "
-    >
-      <div style="display: flex; align-items: center; margin-bottom: 30px">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="white"
-          style="margin-right: 10px"
-        >
-          <circle cx="12" cy="8" r="4" />
-          <path d="M4,20 c0-4,4-6,8-6 s8,2,8,6" />
-        </svg>
-        <span style="font-weight: 700; font-size: 14px; letter-spacing: 1px"
-          >PROFILE</span
-        >
-      </div>
-
-      <div style="font-weight: 800; font-size: 24px; margin-bottom: 5px">
-        KIM YOUNG-EUN
-      </div>
-      <div
-        style="
-          font-weight: 700;
-          font-size: 16px;
-          color: #94a3b8;
-          margin-bottom: 30px;
-        "
-      >
-        2003. 06. 08
-      </div>
-
-      <div
-        style="
-          font-family: &quot;Noto Sans KR&quot;, sans-serif;
-          font-size: 14px;
-          line-height: 1.6;
-          color: #e2e8f0;
-          margin-bottom: 30px;
-        "
-      >
-        섬세한 관찰력으로 UI의 디테일을 놓치지 않으며,<br />
-        팀원과 부드럽게 소통하며<br />
-        최선의 결과를 만들어냅니다.
-      </div>
-
-      <div style="margin-bottom: 40px">
-        <div style="font-size: 12px; margin-bottom: 15px; color: #64748b">
-          Contact me
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <!-- img -->
+        <div class="profile-image">
+          <img src="img/KakaoTalk_20260529_123041206.jpg" alt="프로필 사진" />
         </div>
 
-        <div style="display: flex; align-items: center; margin-bottom: 12px">
-          <div
-            style="
-              width: 25px;
-              height: 25px;
-              background-color: #c6c8d6;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin-right: 12px;
-            "
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="black">
+        <div class="text-container">
+          <div class="profile-header">
+            <!-- svg icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#ffffff"
+            >
               <path
-                d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.6-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"
+                d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Z"
               />
             </svg>
+
+            <h2>PROFILE</h2>
           </div>
-          <span style="font-size: 14px">010-8441-2369</span>
+
+          <h2>NAME</h2>
+          <p>김영은 (kim young-eun)</p>
+
+          <h2>BIRTH</h2>
+          <p>2003. 06. 08</p>
         </div>
 
-        <div style="display: flex; align-items: center">
-          <div
-            style="
-              width: 25px;
-              height: 25px;
-              background-color: #c6c8d6;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin-right: 12px;
-            "
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="black">
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-              />
-            </svg>
-          </div>
-          <span style="font-size: 14px">kye030608@gmail.com</span>
-        </div>
-      </div>
+        <!-- STYLE -->
+        <div class="style-section">
+          <h2>STYLE</h2>
 
-      <div
-        style="
-          font-family: &quot;Noto Sans KR&quot;, sans-serif;
-          font-size: 13px;
-          color: #64748b;
-          border-top: 1px solid #334155;
-          padding-top: 20px;
-        "
-      >
-        #디자인을아는개발자 #사용자중심 #꾸준한성장
-      </div>
+          <p>
+            섬세한 관찰력으로 UI의 디테일을<br />
+            놓치지 않으며,<br />
+            팀원과 부드럽게 소통하며<br />
+            최선의 결과를 만들어냅니다.
+          </p>
+
+          <!-- hashtags -->
+          <div class="tags">
+            <span class="hashtag"><b>#</b>디자인을아는개발자</span>
+            <span class="hashtag"><b>#</b>사용자중심</span>
+            <span class="hashtag"><b>#</b>꾸준한성장</span>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact-section">
+          <h3 class="contact-title-box">Contact me</h3>
+
+          <div class="contact-item">
+            <div class="icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                  d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51L116.75,92a8.16,8.16,0,0,0,.57-.77,16,16,0,0,0,1.22-14.87l0-.12L97.46,29.12a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,76c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,52.12-40.92A16,16,0,0,0,222.37,158.46Z"
+                ></path>
+              </svg>
+            </div>
+            <p>010-8441-2369</p>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                ></path>
+              </svg>
+            </div>
+            <p>kye030608@gmail.com</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="content">
+        <div class="name-box">
+          <h1 class="name-title">KIM Young-eun</h1>
+          <p class="job-title">Frontend Developer</p>
+        </div>
+
+        <div class="main-body-content">
+          <!-- LEARNING & GROWTH -->
+          <section>
+            <h2 class="bullet-title">
+              <span class="bullet-icon"></span>
+              LEARNING & GROWTH
+            </h2>
+
+            <ul class="content-list">
+              <li>UI/UX 및 프론트엔드 개발 과정 수강</li>
+              <li>웹 퍼블리싱 및 반응형 웹 기술 습득</li>
+              <li>디자인 툴을 활용한 인터페이스 설계 및 구현</li>
+              <li>자기 주도적 학습을 통한 검정고시 합격</li>
+              <li>목표 설정 및 달성을 통한 학습 습관 체득</li>
+            </ul>
+          </section>
+
+          <!-- INTRODUCTION -->
+          <section>
+            <h2 class="bullet-title">
+              <span class="bullet-icon"></span>
+              INTRODUCTION
+            </h2>
+
+            <div class="intro-content">
+              <h3>Web Development</h3>
+              <p>
+                HTML5, CSS3, JavaScript를 기반으로 사용자 중심의 반응형 웹
+                서비스를 구축합니다. 논리적인 코드 설계를 통해 유지보수가
+                용이하고 효율적인 웹 환경을 만드는 데 집중합니다.
+              </p>
+
+              <h3>Design-Driven Development</h3>
+              <p>
+                Adobe Photoshop·Illustrator 역량을 활용하여, 디자이너의 의도를
+                100% 이해하고 픽셀 단위까지 정교한 퍼블리싱을 구현합니다. 디자인
+                요소와 개발 역할을 수행합니다.
+              </p>
+
+              <h3>Collaboration & Problem Solving</h3>
+              <p>
+                차분하고 분석적인 성향(ISFP)을 바탕으로 프로젝트의 문제를
+                파악합니다. 최신 AI 도구를 활용해 효율적으로 학습하며 팀원들과
+                조화롭게 소통하는 개발자를 지향합니다.
+              </p>
+            </div>
+          </section>
+
+          <!-- GOAL & VISION -->
+          <section class="goal-section">
+            <h2 class="bullet-title">
+              <span class="bullet-icon"></span>
+              GOAL & VISION
+            </h2>
+
+            <div class="vision-content">
+              <p>
+                사람들이 일상에서 <strong>진정으로 필요로 하는</strong><br />
+                서비스를 만들고
+              </p>
+
+              <p>
+                누구나 <strong>가장 편안하고 편리하게</strong><br />
+                이용할 수 있는 인터페이스를 <br />
+                구축하는 것이 저의 비전입니다.
+              </p>
+
+              <p>
+                디자인적 감각과 개발의 논리를 결합하여<br />
+                <strong>사용자의 불편함을 해결하고</strong>
+              </p>
+
+              <p>
+                새로운 디지털 가치를 전달하는<br />
+                프론트엔드 개발자로<strong> 성장 </strong>하겠습니다.
+              </p>
+            </div>
+          </section>
+
+          <!-- SKILLS -->
+          <section>
+            <h2 class="bullet-title">
+              <span class="bullet-icon"></span>
+              SKILLS
+            </h2>
+
+            <ul class="content-list skills-list">
+              <li>
+                <strong>Development</strong><br />
+                HTML5, CSS3, JavaScript(ES6+)
+              </li>
+
+              <li>
+                <strong>Design & Tools</strong><br />
+                Figma, Photoshop, Illustrator
+              </li>
+
+              <li>
+                <strong>Workflow</strong><br />
+                Git, VS Code, Notion
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
     </div>
+
+    <footer class="main-footer">
+      <svg
+        width="100%"
+        height="32"
+        viewBox="0 0 1280 32"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect y="0" width="1280" height="12" fill="#C6C8D6" />
+
+        <rect y="12" width="1280" height="8" fill="#8A90A0" />
+
+        <rect y="20" width="1280" height="12" fill="#152039" />
+      </svg>
+    </footer>
   </body>
 </html>

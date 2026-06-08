@@ -1,0 +1,516 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: block;
+}
+
+.main-body-content section:nth-child(2),
+.main-body-content section:nth-child(4) {
+  margin-left: -100px;
+}
+
+.main-body-content {
+  margin-top: 260px;
+
+  /* 중앙 정렬 핵심 */
+  width: 900px; /* Grid의 총 가로폭을 명시 */
+  margin-left: auto; /* 왼쪽 여백 자동 */
+  margin-right: auto; /* 오른쪽 여백 자동 */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px; /* 간격을 조금 줄여야 중앙에 안정적으로 들어옵니다 */
+  row-gap: 50px;
+}
+/* container */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 80px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* sidebar */
+.sidebar {
+  position: relative;
+  width: 273px;
+  min-height: 100vh;
+  background-color: #323b4c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* profile image */
+
+.profile-image {
+  margin-top: 118px; /* 피그마와 동일한 상단 간격 */
+  width: 209.61px; /* 피그마 수치 그대로 */
+  height: 301.05px; /* 피그마 수치 그대로 */
+  border-radius: 0 0 100px 100px; /* 아래쪽만 둥글게 */
+  overflow: hidden; /* 튀어나오는 부분 숨기기 */
+  align-self: center; /* 사이드바 가로 중앙 정렬 */
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비율 깨지지 않게 꽉 채움 */
+  object-position: top; /* 위쪽 얼굴 위주로 보이게 */
+}
+
+/* text */
+.text-container {
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+/* sidebar text */
+.sidebar h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 30px;
+  margin: 5px 0 5px 10px;
+}
+
+.sidebar p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 30px;
+  margin: 0 0 10px 10px;
+}
+
+.text-container p,
+.style-section p {
+  margin-left: 25px;
+}
+
+/* hashtag */
+.hashtag {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.hashtag b {
+  font-weight: 700 !important;
+  margin-right: 6px;
+}
+
+/* tags */
+.tags {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* contact */
+.contact-section {
+  margin-top: 10px;
+  padding-left: 0px; /* 사이드바 왼쪽 벽에서 10px 띄우기 */
+}
+
+.contact-title-box {
+  display: inline-block;
+  background-color: #c6c8d6;
+  color: #323b4c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 8px 40px 8px 20px;
+  border-radius: 0 6px 6px 0;
+  margin: 0 0 15px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: fit-content;
+  text-align: left !important;
+}
+
+.contact-item p {
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* contact icon */
+
+.icon-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #c6c8d6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle svg {
+  width: 12px;
+  height: 12px;
+  fill: #323b4c;
+}
+
+/* main content */
+
+.content {
+  flex: 1;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.content-list li {
+  white-space: nowrap;
+  overflow: visible;
+}
+
+/* name box */
+
+.name-box {
+  position: absolute;
+  top: 130px;
+  left: -35px;
+  width: 348px;
+  height: 84px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #c6c8d6;
+  padding: 0 40px 0 70px;
+  border-radius: 0 50px 50px 0;
+  z-index: 1.5;
+}
+
+/* body grid */
+.main-body-content {
+  margin-top: 260px;
+  padding: 0 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 150px;
+  row-gap: 50px;
+}
+
+.main-body-content section:nth-child(4) {
+  margin-top: 50px;
+}
+
+/* bullet title */
+.bullet-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #323b4c;
+
+  margin-bottom: 18px;
+}
+
+.bullet-icon {
+  position: relative;
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+
+  border: 2px solid #323b4c;
+  border-radius: 50%;
+}
+
+.bullet-icon::after {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #323b4c;
+}
+
+/* intro */
+.intro-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #323b4c;
+  margin-bottom: 4px; /* 제목 아래 간격을 8px -> 4px로 축소 */
+}
+
+.intro-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px; /* 폰트를 살짝 줄여서 전체 높이 축소 */
+  font-weight: 400;
+  color: #323b4c;
+  line-height: 1.6; /* 줄 간격을 1.8 -> 1.6으로 축소 */
+  margin-bottom: 12px; /* 20px에서 12px로 줄여 섹션 간격 압축 */
+}
+
+.intro-content {
+  max-width: 1500px;
+}
+
+.skills-list {
+  max-width: 1500px;
+}
+/* vision */
+.vision-content p {
+  word-break: keep-all;
+
+  text-align: justify;
+
+  margin-bottom: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #323b4c;
+}
+
+.vision-content p:last-child {
+  margin-bottom: 0;
+}
+
+.goal-section {
+  margin-top: -80px; /* -200px에서 0 또는 필요한 만큼의 여유 간격으로 수정 */
+}
+
+.vision-section {
+  margin-top: 0px; /* 여기도 -10px 대신 0으로 조정 */
+}
+
+/* list */
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #323b4c;
+}
+
+.content-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+/* vertical */
+.content-list,
+.intro-content,
+.vision-content,
+.skills-list {
+  position: relative;
+  padding-left: 20px;
+}
+
+.content-list::before,
+.intro-content::before,
+.vision-content::before,
+.skills-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.75px;
+  background-color: #323b4c;
+}
+
+/*footer */
+
+.main-footer {
+  width: 1280px;
+  height: 50px;
+
+  margin: 0 auto;
+  margin-top: -0px;
+
+  background: #323b4c;
+
+  position: relative;
+  z-index: 10;
+}
+
+.main-footer svg {
+  width: 100%;
+  height: 20px;
+  display: block;
+}
+
+/* mobile*/
+@media (max-width: 768px) {
+  /* 전체 */
+  .container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  /* 사이드바 */
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  /* 프로필 이미지 */
+  .profile-image {
+    width: 220px;
+    height: 300px;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    border-radius: 0 0 80px 80px;
+  }
+  /* 이름 박스 */
+  .name-box {
+    position: relative;
+
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 20px 0;
+    padding: 20px 25px;
+
+    box-sizing: border-box;
+
+    border-radius: 0 30px 30px 0;
+  }
+
+  .name-title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .job-title {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  /* 본문 */
+  .main-body-content {
+    margin-top: 40px !important;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 0 20px;
+
+    gap: 50px;
+  }
+
+  /* PC 보정 제거 */
+  .main-body-content section:nth-child(2),
+  .main-body-content section:nth-child(4) {
+    margin-left: 0 !important;
+  }
+
+  .goal-section {
+    margin-top: 0 !important;
+  }
+
+  .vision-section {
+    margin-top: 0 !important;
+  }
+
+  /* 제목 */
+  .bullet-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* 세로선 */
+  .content-list,
+  .intro-content,
+  .vision-content,
+  .skills-list {
+    padding-left: 15px;
+  }
+
+  /* 텍스트 */
+  .content-list li,
+  .intro-content p,
+  .vision-content p,
+  .skills-list li {
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: normal;
+  }
+
+  .intro-content h3 {
+    font-size: 13px;
+  }
+
+  /* 연락처 */
+  .contact-item {
+    justify-content: flex-start;
+  }
+
+  /* 푸터 */
+  .main-footer {
+    width: 100%;
+  }
+}
